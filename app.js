@@ -3,7 +3,7 @@ const app = express();
 
 
 app.use("/", (req, res, next) => {
-    res.render("<h3>Apppppp started succesfully</h3>")
+    res.render("<h3>App started succesfully</h3>")
 })
 
 const port = process.env.PORT || 3000;

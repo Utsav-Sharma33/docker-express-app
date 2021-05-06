@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gitpush" : "git add . && git commit -m $m && git push -u origin master",
+    "gitpush" : "git add . && git commit -m $message && git push -u origin master",
     "start": "node app.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

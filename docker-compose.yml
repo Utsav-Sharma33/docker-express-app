@@ -1,0 +1,24 @@
+version: "3"
+services: 
+    node-app: 
+        build: 
+            context: .
+        ports: 
+            - 4000:4000
+        environment: 
+            - PORT=4000 
+    mongo:
+        image: mongo
+        environment: 
+            - MONGO_INITDB_ROOT_USERNAMR: utsav
+            - MONGO_INITDB_ROOT_PASSWORD: utsav
+        command: 
+            --wiredTigerCacheSizeGB 0.5
+        volumes: 
+            - ./_mongoDB:/data/db
+            # - mongoDB:/data/db -->> <database_alias>: local_database_repo
+
+
+# This is used to mention named database volumes to docker engine 
+# volumes: 
+#     mongoDB: 

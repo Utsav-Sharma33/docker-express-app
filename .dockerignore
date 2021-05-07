@@ -1,7 +1,10 @@
 node_modules
-.dockerignore
-.env
-.rest
+*.dockerignore
+*.env
+*.rest
 Dockerfile
-.git
-.gitignore
+*.git
+*.gitignore
+*.md
+*.yml
+*.TODO

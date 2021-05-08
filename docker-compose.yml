@@ -7,11 +7,14 @@ services:
             - 4000:4000
         environment: 
             - PORT=4000 
+        depends_on: 
+            - mongo
+        
     mongo:
         image: mongo
-        environment: 
-            - MONGO_INITDB_ROOT_USERNAMR: utsav
-            - MONGO_INITDB_ROOT_PASSWORD: utsav
+        # environment: 
+        #     - MONGO_INITDB_ROOT_USERNAME=utsav
+        #     - MONGO_INITDB_ROOT_PASSWORD=utsav
         command: 
             --wiredTigerCacheSizeGB 0.5
         volumes: 

@@ -16,7 +16,7 @@ services:
         #     - MONGO_INITDB_ROOT_USERNAME=utsav
         #     - MONGO_INITDB_ROOT_PASSWORD=utsav
         command: 
-            --wiredTigerCacheSizeGB 0.5
+            --wiredTigerCacheSizeGB 0.1 # this is for creating database size in GigaBytes
         volumes: 
             - ./_mongoDB:/data/db
             # - mongoDB:/data/db -->> <database_alias>: local_database_repo

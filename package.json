@@ -11,11 +11,22 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
     "dotenv": "^9.0.0",
     "express": "^4.17.1",
-    "mongoose": "^5.12.7"
+    "express-mongo-sanitize": "^2.0.2",
+    "express-session": "^1.17.1",
+    "express-useragent": "^1.0.15",
+    "helmet": "^4.6.0",
+    "mongo-connect": "^0.0.6",
+    "mongoose": "^5.12.7",
+    "validators": "^0.3.1",
+    "xss-clean": "^0.1.1"
   },
   "devDependencies": {
-      "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7"
   }
 }
